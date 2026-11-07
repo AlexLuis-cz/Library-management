@@ -1,10 +1,10 @@
 package org.services;
 
-import org.repository.RepositoryBook;
+import org.repository.BookRepository;
 
 public class SearchService {
 
     public void search() {
-        RepositoryBook.showBooks();
+        BookRepository.showBooks();
     }
 }

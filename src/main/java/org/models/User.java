@@ -1,28 +1,15 @@
 package org.models;
 
-public class User {
-    private String nameUser;
-    private String password;
+public class User extends AbstractUser {
+    private Book[] books = new Book[10];
+    private byte prox = 0;
 
-    public User(String nameUser, String password){
-        this.nameUser = nameUser;
-        this.password = password;
+    public User(String nameUser, String password) {
+        super(nameUser, password);
     }
 
-    public String getNameUser() {
-        return nameUser;
-    }
-
-    public void setNameUser(String nameUser) {
-        this.nameUser = nameUser;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setBooks(Book book) {
+        this.books[prox] = book;
+        prox++;
     }
 }
-

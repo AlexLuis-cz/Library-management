@@ -1,8 +1,8 @@
 package org.services;
 
-import org.Utils.InputUtils;
+import org.utils.InputUtils;
 import org.models.Book;
-import org.repository.RepositoryBook;
+import org.repository.BookRepository;
 
 public class AddBook {
 
@@ -20,6 +20,6 @@ public class AddBook {
 
         Book book = new Book(nameBook,publisher,yearLaunched);
 
-        RepositoryBook.addRepository(book);
+        BookRepository.addRepository(book);
     }
 }

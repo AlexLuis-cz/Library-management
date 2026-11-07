@@ -3,7 +3,7 @@ package org.repository;
 import org.models.Availability;
 import org.models.Book;
 
-public class RepositoryBook {
+public class BookRepository {
     private static Book[] books = new Book[500];
     private static int prox = 0;
 
